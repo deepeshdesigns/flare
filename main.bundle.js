@@ -180,14 +180,13 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngmaterial_module__ = __webpack_require__("./src/app/ngmaterial.module.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_routing_module__ = __webpack_require__("./src/app/app-routing.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__("./src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__search_box_search_box_component__ = __webpack_require__("./src/app/search-box/search-box.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__countries_service__ = __webpack_require__("./src/app/countries.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__api_service__ = __webpack_require__("./src/app/api-service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__country_details_country_details_component__ = __webpack_require__("./src/app/country-details/country-details.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__search_history_search_history_component__ = __webpack_require__("./src/app/search-history/search-history.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__storage_service__ = __webpack_require__("./src/app/storage.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__("./src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__search_box_search_box_component__ = __webpack_require__("./src/app/search-box/search-box.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__countries_service__ = __webpack_require__("./src/app/countries.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__api_service__ = __webpack_require__("./src/app/api-service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__country_details_country_details_component__ = __webpack_require__("./src/app/country-details/country-details.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__search_history_search_history_component__ = __webpack_require__("./src/app/search-history/search-history.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__storage_service__ = __webpack_require__("./src/app/storage.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -209,17 +208,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__search_box_search_box_component__["a" /* SearchBoxComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__country_details_country_details_component__["a" /* CountryDetailsComponent */],
-                __WEBPACK_IMPORTED_MODULE_13__search_history_search_history_component__["a" /* SearchHistoryComponent */]
+                __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */],
+                __WEBPACK_IMPORTED_MODULE_8__search_box_search_box_component__["a" /* SearchBoxComponent */],
+                __WEBPACK_IMPORTED_MODULE_11__country_details_country_details_component__["a" /* CountryDetailsComponent */],
+                __WEBPACK_IMPORTED_MODULE_12__search_history_search_history_component__["a" /* SearchHistoryComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -228,17 +226,10 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["d" /* FormsModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["i" /* ReactiveFormsModule */],
                 __WEBPACK_IMPORTED_MODULE_4__ngmaterial_module__["a" /* MaterialAppModule */],
-                __WEBPACK_IMPORTED_MODULE_6__app_routing_module__["a" /* AppRoutingModule */], __WEBPACK_IMPORTED_MODULE_7__angular_router__["c" /* RouterModule */].forRoot([
-                    //{path: '', component: AppComponent },
-                    //we dont need this if we have already put the main code in the app.component.html 
-                    { path: 'search', component: __WEBPACK_IMPORTED_MODULE_9__search_box_search_box_component__["a" /* SearchBoxComponent */] },
-                    { path: 'history', component: __WEBPACK_IMPORTED_MODULE_13__search_history_search_history_component__["a" /* SearchHistoryComponent */] },
-                    { path: '', redirectTo: 'search', pathMatch: 'full' },
-                    { path: '**', redirectTo: 'search', pathMatch: 'full' }
-                ])
+                __WEBPACK_IMPORTED_MODULE_6__app_routing_module__["a" /* AppRoutingModule */],
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_10__countries_service__["a" /* CountriesService */], __WEBPACK_IMPORTED_MODULE_11__api_service__["a" /* ApiService */], __WEBPACK_IMPORTED_MODULE_14__storage_service__["a" /* StorageService */]],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */]]
+            providers: [__WEBPACK_IMPORTED_MODULE_9__countries_service__["a" /* CountriesService */], __WEBPACK_IMPORTED_MODULE_10__api_service__["a" /* ApiService */], __WEBPACK_IMPORTED_MODULE_13__storage_service__["a" /* StorageService */]],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
     return AppModule;
@@ -5096,7 +5087,7 @@ module.exports = ".example-header-image {\r\n  background-image: url('https://ma
 /***/ "./src/app/search-history/search-history.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<!-- The table will render the details of he country selected using data binding concept -->\r\n<div class=\"container\">\r\n    <table class=\"table table-hover text-center\">\r\n        <thead>\r\n            <tr>\r\n                <td><Country Flag</td>\r\n                <!--<td class=\"img-thumbnail-new\" >Country Flag</td> -->\r\n                <td>Name</td>\r\n                <td>Currency</td>\r\n            </tr>\r\n        </thead>\r\n        <tbody>\r\n            <tr *ngFor=\"let country of history\" (click)=\"openCountry(country.NumericCode)\">\r\n              <!--  <td class=\"img-thumbnail-new\"> <img class=\"img-thumbnail-new\" style=\"height:15% !important;\" src=\"{{country.Flag}}\" alt=\"flag\"></td> -->\r\n              <td class=\"img-thumbnail-new\"> <img class=\"img-thumbnail-new\" src=\"{{country.Flag}}\" alt=\"flag\"></td>\r\n                <td>{{country.Name}}</td>\r\n                <td>{{country.Name}}</td>\r\n            </tr>\r\n        </tbody>\r\n    </table> \r\n</div>\r\n\r\n\r\n<router-outlet></router-outlet>"
+module.exports = "\r\n<!-- The table will render the details of he countries selected using data binding concept -->\r\n<!-- On clicking any of the rows in the table,it would lead to search page and display the country information   -->\r\n\r\n\r\n<div class=\"container\">\r\n    <table class=\"table table-hover text-center\">\r\n        <thead>\r\n            <tr>\r\n                <td>Country Flag</td>\r\n                <!--<td class=\"img-thumbnail-new\" >Country Flag</td> -->\r\n                <td>Name</td>\r\n                <td>Currency</td>\r\n            </tr>\r\n        </thead>\r\n        <tbody>\r\n            <tr *ngFor=\"let country of history\" (click)=\"openCountry(country.NumericCode)\">\r\n              <!--  <td class=\"img-thumbnail-new\"> <img class=\"img-thumbnail-new\" style=\"height:15% !important;\" src=\"{{country.Flag}}\" alt=\"flag\"></td> -->\r\n              <td class=\"img-thumbnail-new\"> <img class=\"img-thumbnail-new\" src=\"{{country.Flag}}\" alt=\"flag\"></td>\r\n                <td>{{country.Name}}</td>\r\n                <td>{{country.Name}}</td>\r\n            </tr>\r\n        </tbody>\r\n    </table> \r\n</div>\r\n\r\n\r\n<router-outlet></router-outlet>"
 
 /***/ }),
 
