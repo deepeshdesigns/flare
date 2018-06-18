@@ -129,7 +129,7 @@ module.exports = "\r\n/* Increasing the margins of the branding element in nav b
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <button mat-button>Material Button</button> -->\r\n\r\n\r\n<!-- <app-search-box></app-search-box> -->\r\n<router-outlet></router-outlet>\r\n\r\n\r\n"
+module.exports = " <!-- Brand and toggle get grouped for better mobile display -->\r\n <nav class=\"row navbar navbar-expand-lg navbar-light bg-light\">\r\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarTogglerDemo01\" aria-controls=\"navbarTogglerDemo01\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n          <span class=\"navbar-toggler-icon\"></span>\r\n        </button>\r\n        <div class=\"collapse navbar-collapse\" id=\"navbarTogglerDemo01\">\r\n          <a class=\"navbar-brand\" href=\"search\"><strong>Search Country</strong> </a>\r\n          <ul class=\"navbar-nav mr-auto mt-2 mt-lg-0\">\r\n            <li class=\"nav-item active\" id=\"search\">\r\n              <a class=\"nav-link search\" href=\"search\" >Search <span class=\"sr-only\">(current)</span></a>\r\n            </li>\r\n            <li class=\"nav-item\" id=\"history\">\r\n              <a class=\"nav-link history\" href=\"history\">History</a>\r\n            </li>\r\n            \r\n          \r\n        </div>\r\n      </nav>\r\n<router-outlet></router-outlet>\r\n\r\n\r\n"
 
 /***/ }),
 
