@@ -86,6 +86,9 @@ var routes = [
         path: '', component: __WEBPACK_IMPORTED_MODULE_4__search_box_search_box_component__["a" /* SearchBoxComponent */],
     },
     {
+        path: 'search', component: __WEBPACK_IMPORTED_MODULE_4__search_box_search_box_component__["a" /* SearchBoxComponent */],
+    },
+    {
         path: 'history', component: __WEBPACK_IMPORTED_MODULE_5__search_history_search_history_component__["a" /* SearchHistoryComponent */],
     },
     {
@@ -119,7 +122,7 @@ var AppRoutingModule = /** @class */ (function () {
 /***/ "./src/app/app.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\r\n/* Increasing the margins of the branding element in nav bar */\r\n.navbar-brand {\r\n    margin-left: 1%;\r\n    margin-right: 3%;\r\n}\r\n/* Increasing the margins of the menu items for clear spacing  */\r\n.nav-item {\r\n    margin-left:5%;\r\n    margin-right:5%\r\n}"
 
 /***/ }),
 
